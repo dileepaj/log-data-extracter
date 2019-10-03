@@ -38,5 +38,6 @@ public:
 		x << _MSTR(Start Var: ) << et.s_StartVarName.c_str();
 		x << _MSTR(   Special Command: ) << et.ul_SpecialCommand;
 		x << _MSTR(\nEntity: ) << et.p_Entity;
+        return x;
 	}
 };

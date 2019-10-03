@@ -6,7 +6,7 @@
 #include "ExecutionContext.h"
 #include "Node.h"
 #include "MemMan.h"
-#include "ELInterpretter.h"
+#include "LDEL/ELInterpretter.h"
 
 void Tests::RunTest1()
 {
