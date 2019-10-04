@@ -9,6 +9,7 @@
 #ifndef __LogAnalyzer__CPlusPlusEntry__
 #define __LogAnalyzer__CPlusPlusEntry__
 
+
 #include <iostream>
 
 class CPlusPlusEntry {

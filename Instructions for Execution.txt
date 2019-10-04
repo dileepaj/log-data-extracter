@@ -1,0 +1,25 @@
+1)Windows Command Line
+
+Prerequisites - CMake should be installed
+		MinGW should be installed
+
+1.Navigate to the Project Directory (Data-Extractor\log-data-extracter\LogAnalyzer)
+2.Exclude the main.mm file from the CMakeLists.txt file and include the main.cpp
+3.Execute the following commands in command prompt terminal
+	mkdir build 				//make a seperate directory for the build files
+	cd build
+	cmake .. -G "MinGW Makefiles"		//Command to build the CMake build file using MinGW compiler(If MinGW is not specified, cmake.. command will build using visual studio by default)
+	mingw32-make				//Create the executable .exe file
+
+2)Linux Terminal
+
+Prerequisites - CMake should be installed
+		MinGW should be installed
+
+1.Navigate to the Project Directory (Data-Extractor\log-data-extracter\LogAnalyzer)
+2.Exclude the main.mm file from the CMakeLists.txt file and include the main.cpp
+3.Execute the following commands in command prompt terminal
+	mkdir build 			//make a seperate directory for the build files
+	cd build
+	cmake ..			//Command to build the CMake build file using MinGW compiler.
+	make				//Create the executable .exe file

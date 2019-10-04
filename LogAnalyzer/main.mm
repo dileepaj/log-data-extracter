@@ -17,16 +17,16 @@ using namespace std;
 int main(int argc, const char * argv[])
 {
 
-    @autoreleasepool {
+  //  @autoreleasepool {
         
         // insert code here...
-//        NSLog(@"Hello, World!");
+        //NSLog(@"Hello, World!");
 //        map<string, string> myMap;
 //        myMap["abc"] = "xyz";
 //        cout << myMap["abc"];
         CPlusPlusEntry cppEntry;
         cppEntry.RunDefault();
-    }
+   // }
     return 0;
 }
 

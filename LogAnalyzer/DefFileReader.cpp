@@ -2,10 +2,13 @@
 #include "MetaData.h"
 #include "MemMan.h"
 #include "Utils.h"
+#include <iostream>
+
+using namespace std;
 
 MetaData* DefFileReader::Read(MSTRING sFile)
 {
-	MetaData* pMD = 0;
+    MetaData* pMD = 0;
 	MIFSTREAM file(sFile.c_str());
 	MSTRING sLine;
 	if(file.is_open())

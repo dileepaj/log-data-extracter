@@ -1,0 +1,3 @@
+D:/reserach team/log-data-extracter/LogAnalyzer/cmake-build-debug/CMakeFiles/LogAnalyzer.dir
+D:/reserach team/log-data-extracter/LogAnalyzer/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/reserach team/log-data-extracter/LogAnalyzer/cmake-build-debug/CMakeFiles/rebuild_cache.dir

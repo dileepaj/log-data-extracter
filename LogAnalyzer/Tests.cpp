@@ -6,12 +6,15 @@
 #include "ExecutionContext.h"
 #include "Node.h"
 #include "MemMan.h"
-#include "LDEL/ELInterpretter.h"
+#include "ELInterpretter.h"
+#include <iostream>
+
+using namespace std;
 
 void Tests::RunTest1()
 {
 	DefFileReader dfr;
-	MetaData* pMD = dfr.Read("/Users/dileepa/Dileepa/WorkDir/LogAnalyzer/tests/test1/Defs.txt");
+	MetaData* pMD = dfr.Read("../tests/test1/Defs.txt");
 	ScriptReader sr;
 	ScriptReaderOutput op;
 	bool bSucc = sr.ProcessScript(pMD->s_RuleFileName, pMD, op);
@@ -32,7 +35,7 @@ void Tests::RunTest1()
 void Tests::RunTest2()
 {
 	DefFileReader dfr;
-	MetaData* pMD = dfr.Read("\\tests\\test2\\Defs.txt");
+	MetaData* pMD = dfr.Read("../tests/test3/Defs.txt");
 	ScriptReader sr;
 	ScriptReaderOutput op;
 	bool bSucc = sr.ProcessScript(pMD->s_RuleFileName, pMD, op);
@@ -59,7 +62,7 @@ void Tests::RunTest2()
 void Tests::RunTest3()
 {
 	DefFileReader dfr;
-	MetaData* pMD = dfr.Read("/Users/dileepa/Dileepa/WorkDir/LogAnalyzer/tests/test3/Defs.txt");
+	MetaData* pMD = dfr.Read("../tests/test3/Defs.txt");
 	ScriptReader sr;
 	ScriptReaderOutput op;
 	bool bSucc = sr.ProcessScript(pMD->s_RuleFileName, pMD, op);
@@ -85,11 +88,11 @@ void Tests::RunTest3()
 
 void Tests::RunLDELtest1() {
     ELInterpretter intp;
-    intp.EvaluateCase("/Users/dileepaj/Dileepa/WorkDir/LogAnalyzer/tests/LDEL_test1/Defs.txt");
+    intp.EvaluateCase("../tests/LDEL_test1/Defs.txt");
 }
 
 void Tests::RunLDELtest2() {
     ELInterpretter intp;
-    intp.EvaluateCase("/Users/dileepaj/Dileepa/WorkDir/LogAnalyzer/tests/LDEL_test2/Defs.txt");
+    intp.EvaluateCase("../tests/LDEL_test2/Defs.txt");
 }
 

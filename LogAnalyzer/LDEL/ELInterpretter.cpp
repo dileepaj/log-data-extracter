@@ -16,6 +16,9 @@
 #include "MemMan.h"
 #include "ELNodeWrapper.h"
 #include "Utils.h"
+#include <iostream>
+
+using namespace std;
 
 ELInterpretterResult::ELInterpretterResult() {
     startNode = NULL;
@@ -38,13 +41,12 @@ ELInterpretterResult* ELInterpretter::EvaluateCase(MSTRING sDefFile) {
     ir->millisecondsForInterpreting = Utils::getMilliSpan(start);
     
     PrintInterpretterResult(ir);
-    
     return ir;
 }
 
 void ELInterpretter::PrintInterpretterResult(ELInterpretterResult *ir) {
     MOFSTREAM file;
-    file.open("/Users/dileepaj/Dileepa/WorkDir/LogAnalyzer/tests/LDEL_test1/result.txt", std::ios::out | std::ios::trunc);
+    file.open("../tests/LDEL_test1/result.txt", std::ios::out | std::ios::trunc);
     file << _MSTR(Time spent parsing =) << SPACE << ir->millisecondsForParsing << SPACE << _MSTR(ms\n);
     file << _MSTR(Time spent interpreting =) << SPACE << ir->millisecondsForInterpreting << SPACE << _MSTR(ms\n);
     PNODE curr = ir->startNode;

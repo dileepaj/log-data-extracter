@@ -1,0 +1,4 @@
+Test Suite 'ApiNotificationManagerTests' started at 2013-07-07 22:01:41 +0000
+Test Case '-[ApiNotificationManagerTests testThatClassExists]' started.
+Test Case '-[ApiNotificationManagerTests testThatClassExists]' passed (0.000 seconds).
+Test Suite 'ApiNotificationManagerTests' finished at 2013-07-07 22:01:41 +0000.
