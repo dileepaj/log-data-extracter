@@ -13,6 +13,9 @@
 #include "ELVariableParser.h"
 #include "ELLineTemplateParser.h"
 #include "ELBlockTemplateParser.h"
+#include <iostream>
+
+using namespace std;
 
 ELParser::ELParser() {
     
@@ -23,9 +26,11 @@ ELParser::~ELParser() {
 }
 
 bool ELParser::ProcessScript(MSTRING &sFile, MetaData *md, ELParserResult &result) {
+
     LST_STR lstLines;
 	LST_INT lstLineNumbers;
 	ReadFileToLines(sFile, md->s_LineContinuation, md->s_CommentStart, lstLines, lstLineNumbers);
+
     if(lstLines.empty())
 	{
 		return false;
@@ -70,9 +75,10 @@ bool ELParser::ProcessScript(MSTRING &sFile, MetaData *md, ELParserResult &resul
 
 void ELParser::ReadFileToLines(MSTRING sFile, MSTRING sLineContinuation, MSTRING sCommentStart, LST_STR& lstLines, LST_INT& lstLineNumbers)
 {
-	MIFSTREAM file(sFile.c_str());
+    MIFSTREAM file(sFile.c_str());
 	MSTRING sLine;
 	MSTRING sCurr = EMPTY_STRING;
+
 	if(file.is_open())
 	{
 		MINT iLineNo = 0;

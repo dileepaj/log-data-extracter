@@ -10,6 +10,9 @@
 #include "CommonIncludes.h"
 #include "Utils.h"
 #include "Tests.h"
+#include <iostream>
+
+using namespace std;
 
 void RunMenu();
 
@@ -220,6 +223,7 @@ int RunUnitTest3()
 int RunLDELtest1() {
     Tests tests;
     tests.RunLDELtest1();
+
     return 1;
 }
 
