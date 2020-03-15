@@ -1,0 +1,37 @@
+REMOVE_LINE_REPETITIONS
+
+// Variable definitions
+$TEST_SUITE = $(STRING)
+$TEST_CASE = $(STRING)
+$TIME_INTERVAL = $(FLOAT)
+$TEST_COUNT = $(NUMBER)
+$FAILURE_COUNT = $(NUMBER)
+
+$YEAR = $(NUMBER)
+$MONTH = $(NUMBER)
+$DATE = $(NUMBER)
+$HOUR = $(NUMBER)
+$MINUTE = $(NUMBER)
+$SECONDS = $(NUMBER)
+$TIMESTAMP=[$YEAR, '-', $MONTH, '-', $DATE, ' ', $HOUR, ':', $MINUTE, ':', $SECONDS, ' +', $(NUMBER)]
+
+// Line template definitions
+$$TEST_START = ['Test Case \'-[', $TEST_SUITE, ' ', $TEST_CASE, ']\' started.']
+$$TEST_PASSED = ['Test Case \'-[', $TEST_SUITE, ' ', $TEST_CASE, ']\' passed (', $TIME_INTERVAL, ' seconds).']
+$$TEST_FAILED = ['Test Case \'-[', $TEST_SUITE, ' ', $TEST_CASE, ']\' failed (', $TIME_INTERVAL, ' seconds).']
+
+$$TEST_SUITE_START = ['Test Suite \'', $TEST_SUITE, '\' started at ', $TIMESTAMP]
+$$TEST_SUITE_END = ['Test Suite \'', $TEST_SUITE, '\' finished at ', $TIMESTAMP]
+$$TEST_SUITE_RESULT = ['Executed ', $TEST_COUNT, ' tests\, with ', $FAILURE_COUNT, ' failures (', $(NUMBER), ' unexpected) in ', $TIME_INTERVAL, $(TEXT)]
+
+$$NONEMPTY_LINE = [$(TEXT)]
+
+// Block template definitions
+$$$TEST_EXECUTION_SUCCESS = [$$TEST_START, $$NONEMPTY_LINE_SEQUENCE, $$TEST_PASSED]
+$$$TEST_EXECUTION_FAILURE = [$$TEST_START, $$NONEMPTY_LINE_SEQUENCE, $$TEST_FAILED]
+$$$TEST_EXECUTION = {$$$TEST_EXECUTION_SUCCESS, $$$TEST_EXECUTION_FAILURE}
+
+$$$TEST_SUITE_EXECUTION = [$$TEST_SUITE_START, $$$TEST_EXECUTION_SEQUENCE, $$TEST_SUITE_END, $$TEST_SUITE_RESULT]
+
+
+
