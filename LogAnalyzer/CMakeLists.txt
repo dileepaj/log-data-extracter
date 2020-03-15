@@ -63,6 +63,10 @@ add_executable(LogAnalyzer
         LDEL/ELVariable.h
         LDEL/ELVariableParser.cpp
         LDEL/ELVariableParser.h
+        LDEL/ELJSON.cpp
+        LDEL/ELJSON.h
+        LDEL/ELLogFileFilter.cpp
+        LDEL/ELLogFileFilter.h
         AdditionalFunctions.h
         Bool.cpp
         Bool.h

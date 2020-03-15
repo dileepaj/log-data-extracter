@@ -1,0 +1,20 @@
+Test Suite '/Users/Shared/Jenkins/Home/jobs/PagePlanner/workspace/Build/Products/Debug/PagePlannerTests.octest(Tests)' started at 2013-07-07 22:01:41 +0000
+Test Suite 'ApiSuite1' started at 2013-07-07 22:01:41 +0000
+Test Case '-[ApiSuite2 testThatClassExists]' started.
+Test Case '-[ApiSuite3 testThatClassExists]' passed (0.000 seconds).
+Test Case '-[ApiSuite4 testapiIdentifiers__propertyExists]' started.
+Test Case '-[ApiSuite5 testapiIdentifiers__propertyExists]' passed (0.000 seconds).
+Test Case '-[ApiSuite6 testapiIdentifiers_whenObjectCreatedThroughDI_propertyInjectedProperly]' started.
+Test Case '-[ApiSuite7 testapiIdentifiers_whenObjectCreatedThroughDI_propertyInjectedProperly]' passed (0.000 seconds).
+Test Case '-[ApiSuite8 testhandleApiNoifications__methodExists]' started.
+Test Case '-[ApiSuite9 testhandleApiNoifications__methodExists]' passed (0.000 seconds).
+Test Case '-[ApiSuitev0 testhandleApiNoifications_calledWithNullRequest_doesNotThrow]' started.
+Test Case '-[ApiSuitev1 testhandleApiNoifications_calledWithNullRequest_doesNotThrow]' passed (0.000 seconds).
+Test Case '-[ApiSuitev2 testhandleApiNoifications_calledWithNullResult_doesNotThrow]' started.
+Test Case '-[ApiSuitev3 testhandleApiNoifications_calledWithNullResult_doesNotThrow]' passed (0.000 seconds).
+Test Case '-[ApiSuitev4 testnotificationTranslations_propertyExists]' started.
+Test Case '-[ApiSuitev5 testnotificationTranslations_propertyExists]' passed (0.000 seconds).
+Test Case '-[ApiSuite1 testnotificationTranslations_whenObjectCreatedThroughDI_propertyInjectedProperly]' started.
+Test Case '-[ApiSuite2 testnotificationTranslations_whenObjectCreatedThroughDI_propertyInjectedProperly]' passed (0.000 seconds).
+Test Suite 'ApiSuite3' finished at 2013-07-07 22:01:41 +0000.
+Executed 8 tests, with 0 failures (0 unexpected) in 0.001 (0.002) seconds
