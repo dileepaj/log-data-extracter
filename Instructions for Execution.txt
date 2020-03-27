@@ -23,3 +23,10 @@ Prerequisites - CMake should be installed
 	cd build
 	cmake ..			//Command to build the CMake build file using MinGW compiler.
 	make				//Create the executable .exe file
+
+
+1) Clone/Download the DataAnalyzer repository into your local repository.
+2) Insert your log file into DataAnalyzer/Files/log.txt
+3) Write a suitable script for your log file that captures all the required variables into DataAnalyzer/Files/script.txt (Example log and script files can be found in DataAnalyzer/Files/Examples)
+4) Execute the LogAnalyzer.exe found in DataAnalyzer/LogAnalyzer/cmake-build-debug
+5) The json node tree structure will be printed in DataAnalyzer/Files/resultJSON.json

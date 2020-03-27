@@ -1,3 +1,0 @@
-D:/Data-Extractor/log-data-extracter/LogAnalyzer/build/CMakeFiles/LogAnalyzer.dir
-D:/Data-Extractor/log-data-extracter/LogAnalyzer/build/CMakeFiles/edit_cache.dir
-D:/Data-Extractor/log-data-extracter/LogAnalyzer/build/CMakeFiles/rebuild_cache.dir
