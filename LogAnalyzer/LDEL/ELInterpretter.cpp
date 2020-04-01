@@ -60,7 +60,7 @@ void ELInterpretter::PrintInterpretterResult(ELInterpretterResult *ir) {
     //Added Functionality to print the node tree to a json file consisting of nested json objects
 
     MOFSTREAM jsonfile;
-    jsonfile.open("../tests/LDEL_test1/logdata/resultJSON.json", std::ios::out | std::ios::trunc);
+    jsonfile.open("../../Files/resultJSON.json", std::ios::out | std::ios::trunc);
     PNODE curr = ir->startNode;
     int count =1;
     jsonfile<<_MSTR({);
