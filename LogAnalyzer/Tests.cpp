@@ -88,7 +88,7 @@ void Tests::RunTest3()
 
 void Tests::RunLDELtest1() {
     ELInterpretter intp;
-    intp.EvaluateCase("../tests/LDEL_test1/Defs.txt");
+    intp.EvaluateCase("../../Files/Defs.txt");
 }
 
 void Tests::RunLDELtest2() {
